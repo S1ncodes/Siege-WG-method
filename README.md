@@ -1,56 +1,84 @@
-# Siege-WG-method
-🚀 How to Fix High Ping in Rainbow Six Siege Using WireGuard + VPNJantit
+# Siege-WG-Method
+🚀 **Fix High Ping in Rainbow Six Siege Using WireGuard + VPNJantit**
 
-If you're experiencing high ping in Rainbow Six Siege, this project offers a simple solution: route your game traffic through a WireGuard VPN using low-latency servers from VPNJantit
-. This can help reduce ping caused by bad ISP routing or regional server issues.
+If you’re experiencing high ping in Rainbow Six Siege, this project provides a simple solution: route your game traffic through a **WireGuard VPN** using low-latency servers from **VPNJantit**.  
+This can help reduce ping caused by poor ISP routing or regional server issues.
 
-🔧 Requirements
+---
 
-WireGuard
- installed (Available for Windows, macOS, Linux)
+## 🔧 Requirements
+- [WireGuard](https://www.wireguard.com/install/) installed (Windows, macOS, Linux)  
+- A free VPN profile from [VPNJantit](https://www.vpnjantit.com/free-vpn)
 
-A free VPN profile from VPNJantit.com
+---
 
-📥 Step-by-Step Setup
+## 📥 Step-by-Step Setup
 
-Download a Free WireGuard Config from VPNJantit
+### 1. Download a Free WireGuard Config
+- Visit [VPNJantit Free VPN](https://www.vpnjantit.com/free-vpn)  
+- Select a **WireGuard server** close to your game region (e.g., Singapore, Germany, US East)  
 
-Visit: https://www.vpnjantit.com/free-vpn
+You’ll see multiple servers like:  
+```
+yourcountry1.vpnjantit.com
+yourcountry2.vpnjantit.com
+yourcountry3.vpnjantit.com
+```
+Test them to find the best latency.
 
-Choose a WireGuard server near your game server region (e.g., Singapore, Germany, US East)
+---
 
-Click "WireGuard" tab and download the .conf file
+### 2. Test Latency
+1. Open **Command Prompt** (`Win + R`, type `cmd`, press Enter).  
+2. Run:
+   ```sh
+   ping your_server_address_here
+   ```
+   Example:
+   ```sh
+   ping ae3.vpnjantit.com
+   ```
+3. Look for:
+   - **Average ping (ms)** — lower is better (ideally <80ms)  
+   - **No packet loss**  
 
-Import the Config into WireGuard
+Pick the server with the best results.
 
-Open the WireGuard app
+---
 
-Click "Add Tunnel" > "Import from File"
+### 3. Create Account & Download Config
+- Create a username and complete the captcha.  
+- Download the `.conf` file (ignore the QR code, look for the ZIP with configs).  
 
-Select the .conf file you downloaded
+---
 
-Activate the VPN Tunnel
+### 4. Import Config into WireGuard
+1. Open **WireGuard**.  
+2. Click **Add Tunnel → Import from File**.  
+3. Select the `.conf` you downloaded.  
 
-Click "Activate" to start the tunnel
+---
 
-Make sure your IP address has changed and the tunnel is stable
+### 5. Activate the VPN Tunnel
+- Click **Activate** in WireGuard.  
+- Confirm your IP has changed and the tunnel is stable.  
 
-Launch Rainbow Six Siege
+---
 
-Start the game and check if your ping is improved
+### 6. Test in Game
+- Launch Rainbow Six Siege and **jump into a quick match** to see if your ping improves.  
+- You can compare results with and without the VPN to check the difference.  
 
-You can check your connected data center from the in-game settings (Settings > General > Display Data Center)
+---
 
-🧠 Why This Works
+## 🧠 Why This Works
+Some ISPs use inefficient or overloaded routes to Ubisoft’s servers (especially in regions like the Middle East, where I currently reside).  
+By using a closer or better-routed **WireGuard VPN server**, your traffic reaches Siege servers with **lower latency and less jitter**.
 
-Some ISPs use inefficient or overloaded routing to Ubisoft's servers, especially in regions like Asia, Africa, or Eastern Europe. By using a closer or better-routed WireGuard VPN server, your traffic can reach Siege servers with lower latency and less jitter.
+---
 
-⚠️ Notes
-
-VPNJantit is free, but servers may get overloaded — try different ones to find the lowest ping.
-
-Avoid using VPNs that introduce too much encryption overhead or throttle bandwidth.
-
-This method does not bypass bans or region locks — it's purely for improving routing.
-
-Let me know if you'd like to include example configs, scripts to auto-start the VPN with Siege, or advanced routing (e.g. only route Siege traffic through VPN).
+## ⚠️ Notes
+- VPNJantit is free — servers may get overloaded. Test different ones for best results.  
+- **Important:** VPNJantit accounts expire every few days. This means you’ll need to create a new profile and download a fresh config regularly.  
+- The method may sometimes be buggy — I apologize for that. I’ll be looking into this issue further and working on finding a more stable, long-term solution.  
+- This method **does not bypass bans or region locks** — it only improves routing.  
