@@ -32,7 +32,7 @@ Test them to find the best latency.
 1. Open **Command Prompt** (`Win + R`, type `cmd`, press Enter).  
 2. Run:
    ```sh
-   ping your_server_address_here
+   ping yourcountry1.vpnjantit.com
    ```
    Example:
    ```sh
