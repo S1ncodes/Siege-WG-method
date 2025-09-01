@@ -86,7 +86,7 @@ By using a closer or better-routed **WireGuard VPN server**, your traffic reache
 
   ---
 ## Video Tutorial 
-[https://youtu.be/YOUTUBE_VIDEO_ID](https://youtu.be/vwoEBWzVD_w)
+https://youtu.be/vwoEBWzVD_w
 
 
 
