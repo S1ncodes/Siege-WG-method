@@ -1,4 +1,4 @@
-# Siege-WG-Method
+# WG-Method
 🚀 **Fix High Ping in Rainbow Six Siege Using WireGuard + VPNJantit**
 
 If you’re experiencing high ping in Rainbow Six Siege, this project provides a simple solution: route your game traffic through a **WireGuard VPN** using low-latency servers from **VPNJantit**.  
