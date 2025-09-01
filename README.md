@@ -83,3 +83,14 @@ By using a closer or better-routed **WireGuard VPN server**, your traffic reache
 - The method may sometimes be buggy — I apologize for that. I’ll be looking into this issue further and working on finding a more stable, long-term solution.  
 - This method **does not bypass bans or region locks** — it only improves routing.
 - This can work on any game if you know the **server location**
+
+  ---
+## Video Tutorial 
+[https://youtu.be/YOUTUBE_VIDEO_ID](https://youtu.be/vwoEBWzVD_w)
+
+
+
+
+
+
+
